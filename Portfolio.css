@@ -1,0 +1,253 @@
+p.font1
+{
+  font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+.header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.header_button
+{
+    width:100px;
+    height:20x;
+    border-radius: 10px 10px 10px 10px;
+    
+    text-align: center;
+    font-size:x-large;
+    color: rgb(255, 255, 255);
+
+    text-decoration: none;
+}
+
+.header_button:hover
+{
+    color: red;
+}
+
+.topBG
+{
+    padding-top: 20px;
+    background: url(./res/usagi.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.top_title
+{
+    padding-top: 200px;
+    text-align: center;
+}
+
+.name
+{
+    font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    font-size: 50px;
+    color:black;
+}
+
+.profile
+{
+    margin-top: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+}
+
+.icon
+{
+    background: url(./res/usagi.png);
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin : 0 auto
+}
+
+.skill
+{
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+}
+
+.skill_icons
+{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+
+.skill_icon
+{
+  width: 100px;
+}
+
+.skill_detail
+{
+  padding-top: 5px;
+    font-size: 10px;
+}
+
+.icon_C
+{
+    background: url(./res/top/c.png);
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.icon_Cplus
+{
+    background: url(./res/top/c_plus.png);
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.icon_github
+{
+    background: url(./res/top/github.png);
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.icon_vs
+{
+    background: url(./res/top/Visual_Studio.png);
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.icon_slack
+{
+    background: url(./res/top/slack.png);
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.sibaku_title
+{
+    text-align: center;
+}
+
+.product1
+{
+    font-size: xx-large;
+}
+
+.sibaku_content
+{
+    margin-top: 50px;
+    padding: 20px;
+    width: 95%;
+    display: flex;
+    border-radius: 20px 20px 20px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.slide
+{
+    height: 100%;
+    width: 50%;
+}
+
+.linkButton
+{
+    margin-top: 20px;
+    height:20x;
+    border-radius: 10px 10px 10px 10px;
+    
+    text-align: center;
+    font-size: large;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+
+    text-decoration: none;
+}
+
+#scene {
+    perspective: 1000px;
+    width:200px;
+    height:200px;
+    position:relative;
+    top:50vh;
+    left:50vw;
+    transform:translateX(-50%) translateY(-50%);
+  }
+  .boxBase {
+    transform-style:preserve-3d;
+    width:200px;
+    height:200px;
+    animation: turnAround 30s linear 0s infinite normal none running;
+  }
+  @keyframes turnAround {
+    0%{
+      transform:rotateX(0deg) rotateY(0deg);
+    }
+    100%{
+      transform:rotateX(360deg) rotateY(360deg);
+    }
+  }
+  .boxBase > div {
+    background: url(./res/usagi.png);
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    position:absolute;
+    background-color:rgba(100, 100, 100, 0.7);
+    border:0.5px solid black;
+    width:100%;
+    height:100%;
+  }
+  .boxBase > .top {
+    transform:translateY(100px) rotateX(-90deg);
+  }
+  .boxBase > .bottom {
+    transform:translateY(-100px) rotateX(90deg);
+  }
+  .boxBase > .front {
+    transform:translateZ(100px);
+  }
+  .boxBase > .back {
+    transform:translateZ(-100px) rotateX(180deg);
+  }
+  .boxBase > .left {
+    transform:translateX(-100px) rotateY(-90deg);
+  }
+  .boxBase > .right {
+    transform:translateX(100px) rotateY(90deg);
+  }
